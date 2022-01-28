@@ -1,6 +1,6 @@
 //возвращает обёртку на функцию которая вызывается не чаще
 //одного раза в заданном промежутке времени(dellay)
-const debounce = (callback, delay = 1000) => {
+const debounce = (callback, delay = 500) => {
     let timeoutID = 0;
     return (...args) => {
         if (timeoutID) {
